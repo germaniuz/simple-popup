@@ -4,18 +4,33 @@
   <meta charset="UTF-8">
   <title>Simple Popup plugin demo page</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="../src/popup.css">
-</head>
+  <link rel="stylesheet" href="../src/popup.css"></head>
 <body>
   <h1>Simple Popup demo</h1>
   <!-- First add a link wich open a popup box with attribute "data-target" -->
-  <a href="#" data-target="popup-target">Open simple popup box</a>
-  <!-- Second and a popup box divs.-->
-  <div class="pop-box" data-target="popup-target">
+  <ul>
+    <li>
+      <a href="#" data-popup-target="target-a">Open simple popup box target-a</a>
+    </li>
+    <li>
+      <a href="#" data-popup-target="target-b">Open simple popup box target-b</a>
+    </li>
+  </ul>
+  <!-- Second add a popup box divs.-->
+  <div class="pop-box" data-popup-target="target-a">
     <!-- Add a close button if you want -->
     <span class="pop-close-btn">&times;</span>
-    <h2>This is simple popup box</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, dicta dolor, iste provident tenetur pariatur commodi dignissimos mollitia quaerat aliquid nobis odit excepturi eos quibusdam vel quidem corporis perferendis facilis optio doloribus, fugit. Repellendus nesciunt qui quam, sunt pariatur corrupti architecto facere totam, sapiente quibusdam, rem esse distinctio nobis vero.</p>
+    <h2>This is simple popup box target-a</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, dicta dolor, iste provident tenetur pariatur commodi dignissimos mollitia quaerat aliquid nobis odit excepturi eos quibusdam vel quidem corporis perferendis facilis optio doloribus, fugit. Repellendus nesciunt qui quam, sunt pariatur corrupti architecto facere totam, sapiente quibusdam, rem esse distinctio nobis vero.
+    </p>
+  </div>
+  <div class="pop-box" data-popup-target="target-b">
+    <span class="pop-close-btn">&times;</span>
+    <h2>This is simple popup box target-b</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, dicta dolor, iste provident tenetur pariatur commodi dignissimos mollitia quaerat aliquid nobis odit excepturi eos quibusdam vel quidem corporis perferendis facilis optio doloribus, fugit. Repellendus nesciunt qui quam, sunt pariatur corrupti architecto facere totam, sapiente quibusdam, rem esse distinctio nobis vero.
+    </p>
   </div>
   <div class="pop-bg"></div>
   <!-- NOTE: If you want to add two or more popup boxes you don't need add second "pop-bg" div -->
