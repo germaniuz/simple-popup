@@ -8,8 +8,15 @@
 </head>
 <body>
   <h1>Simple Popup demo</h1>
-
-
+  <!-- First add a link wich open a popup box with attribute "data-target" -->
+  <a href="#" data-target="popup-traget">Open simple popup box</a>
+  <!-- Second and a popup box divs.-->
+  <div class="pop-box" data-target="popup-target">
+    <h2>This is simple popup box</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, dicta dolor, iste provident tenetur pariatur commodi dignissimos mollitia quaerat aliquid nobis odit excepturi eos quibusdam vel quidem corporis perferendis facilis optio doloribus, fugit. Repellendus nesciunt qui quam, sunt pariatur corrupti architecto facere totam, sapiente quibusdam, rem esse distinctio nobis vero.</p>
+  </div>
+  <div class="pop-bg"></div>
+  <!-- NOTE: If you want to add two or more popup boxes you don't need add second "pop-bg" div -->
   <!-- include popup plugin js -->
   <script src="../src/popup.js"></script>
 </body>
