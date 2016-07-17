@@ -1,0 +1,39 @@
+/* popup background */
+.pop-bg {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+  background: rgba(0,17,32,0.8);
+  cursor: pointer;
+  overflow-y: auto;
+}
+/* popup box */
+.pop-box {
+  width: 80%;
+  height: auto;
+  margin: 100px 10% auto 10%;
+  padding: 20px;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 999;
+}
+/* popup close-btn*/
+.pop-close-btn {
+  position: absolute;
+  top: -35px;
+  right: 0px;
+  color: #929ea9;
+  font-size: 28px;
+  font-weight: 300;
+  cursor: pointer;
+}
