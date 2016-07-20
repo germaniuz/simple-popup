@@ -20,6 +20,6 @@ $(document).ready(function(){
     $(activeBox).fadeOut(300);
   }
 
-  $('a').click(openBox);
+  $('a[data-popup-target]').click(openBox);
   $('.pop-close-btn, .pop-bg').click(closeBox);
 });
